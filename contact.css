@@ -1,0 +1,134 @@
+body {
+    background-color: #f4f4f9;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /* Clean, modern font */
+  }
+  
+  .header {
+    overflow: hidden;
+    background-color: #21470b;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }.header a {
+    float: left;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .header a.logo {
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 15px;
+  }
+  
+  .header a:hover {
+    background-color: #2e8b57;
+    color: white;
+  }
+  
+  .header a.active {
+    background-color: #365401;
+    color: white;
+  }
+  
+  .header-Right {
+    float: right;
+    padding-right: 15px;
+  }
+  
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #21470b;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+  }
+  h1 {
+    color: #333;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    color: rgb(18, 19, 18);
+    text-align: justify; /* Justified text */
+    font-size: 20px; /* Font size for body text */
+    margin: 10px 0; /* Margin around body text */
+    padding: 2rem; /* Padding for readability */
+  }
+  
+  .container {
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding for spacing */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Arrange elements vertically */
+    gap: 15px; /* Space between form elements */
+    margin-top: 20px; /* Space above the form */
+  }
+  
+  label {
+    font-weight: bold; /* Bold labels */
+  }
+  
+  input, textarea {
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Light border for input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+    width: 100%; /* Full width of the container */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  button {
+    padding: 10px 15px; /* Padding for the button */
+    background-color: rgb(4, 160, 9); /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Button text size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  button:hover {
+    background-color: #000; /* Change background color on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+        font-size: 50px; /* Smaller title for smaller screens */
+    }
+  
+    h2 {
+        font-size: 18px; /* Smaller text for body on smaller screens */
+        padding: 1rem; /* Reduced padding on smaller screens */
+    }
+  
+    .header a {
+        font-size: 16px; /* Smaller text for mobile */
+        padding: 8px 10px; /* Smaller padding for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+        font-size: 40px; /* Further reduce title size for mobile */
+    }
+  }
