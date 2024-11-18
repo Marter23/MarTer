@@ -1,37 +1,107 @@
-<head></head>
-    <title>My Hompage </title>
-    <link rel="stylesheet" type="text/css" href="homepage.css" media="screen">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="index.html" media="screen">
+    
+    <link rel="stylesheet" href="homepage.css">
+</head>
 
-
-    <body data-new-gr-c-s-check-loaded="14.1195.0" data-gr-ext-installed="">
-        <header>
-            <div class="header">
-                <div class="header-Left">
-                    <a class="logo">MARTER</a>
+<body>
+    <header>
+        
+        <div class="header">
+            <div class="header-Left">
+                <div class="dropdown">
+                    <a class="logo" href="#">Marter</a>
+                    <div class="dropdown-content">
+                        <a href="login.html">Sign out</a>
+                    </div>
                 </div>
-            <div class="header-Right">
-                <a class="active" href="homepage.html">HOME</a>
-                <a href="schedule.html">SCHEDULE</a>
-                <a href="contact.html">CONTACT US</a>
-                <a href="about.html">ABOUT US</a>
-                <a href="sign.html">SIGN UP</a>
             </div>
-        </div>
-
-        </header>
-
-        <section class="cars-section">
-            <h1></h1>
-            <div class="image-gallery">
                 
-              
-        </section>
+        <div class="header-Right">
+            <a class="active" href="homepage.html">Home</a>
+            <a href="schedule.html">schedule</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="sign.html">sign up</a>
 
-    </body>
+          
+        </div>
+    </div>
 
-        <footer class="">
-            <div class="footer">
-                 <strong><span>No @copyright this is original from Mr.Mvp James Abandoy</span></strong>. 
-            </div>
-        </footer>
+    </header>
+     
+    <div class="cover">
+        <h1>Welcome! <p> to Marter – Efficient Court Scheduling for Stronger Communities
+            .</p></h1> <br>
+    </div>
+    
+    <br>
+    <br>
+    <div class="cont">
+        <div class="card">
+            <img src="https://www.courtsoftheworld.com/upload/courts/2/0/COTW-rucker-park-1693754958.webp">
+            <div class="title">Tangkulan</div>
+        </div>
+        <div class="card">
+            <img src="https://imgs.search.brave.com/wX90SNdaHle_yoFA0ofVJhk1wOAQbJLEGqxMRqOk3W4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9saDUu/Z29vZ2xldXNlcmNv/bnRlbnQuY29tL3Av/QUYxUWlwTjJoTG1Q/c3dQVUhMNGtVcjZj/SG5xWFVpeVkwNXdr/a1hIQ2dFWXQ9dzQ4/MC1oMzAwLWstbi1y/dw">
+            <div class="title">Manolo fortich plaza</div>
+        </div>
+        <div class="card">
+            <img src="https://www.courtsoftheworld.com/blog/wp-content/uploads/2024/05/IMG_2217-1024x768.jpeg">
+            <div class="title">NBSC court</div>
+        </div>
+        <div class="card">
+            <img src="https://www.courtsoftheworld.com/blog/wp-content/uploads/2024/05/IMG_5220-1024x768.jpeg">
+            <div class="title">St. Joseph </div>
+        </div>
+    </div>
+     
+    <div class="home-container">       
+            <h2>welcome po kayu!</h2>
+            <p>At Marter, we offer an easy-to-use platform that helps individuals and organizations schedule court time, ensuring efficient use of local sports and recreational facilities. Our service provides real-time information on court availability, allowing users to book time slots quickly and effortlessly, maximizing the use of these shared community spaces.</p> 
+            <p><b>Feel free to browse!</b></p>
+    </div>
+
+    <p class="p1" >
+        <i>When you photograph people in color, you photograph their clothes. But when you photograph people in black and white, you photograph their souls!” – Ted Grant </i> 
+     </p>
+
+    <div class="gallery">
+        <div class="image-container">
+            <img src="https://www.courtsoftheworld.com/upload/courts/47955/0/COTW-monsanto-1704498874.webp" alt="This is a painting by Caspar David Friedrich. It is, in my judgment, coherent (it is, being a painting and a masterwork, extremely well composed and balanced), complex (there are trees, bushes, meadows, ponds, mountains, clouds) and fairly mysterious (what lies behind the trees and beyond the mountains?) but not very legible (there is no clear path, though neither does it seem easy to get lost).">
+        </div>
+        <div class="image-container">
+            <img src="https://www.courtsoftheworld.com/upload/courts/17984/0/COTW-veemarkt-1656167036.webp" alt="Here is a different painting, by John Constable. This one, unlike the previous, does, with the road on the right and the bridge on the left, and with the generally familiar and tamed features, seem legible. It also seems coherent (it is balanced and harmonious) and complex (there are many little things going on) but not containing a whole lot of mystery (except perhaps to ask us what happens behind the trees and in the pinkish-orange house).">
+        </div>
+        <div class="image-container">
+            <img src="https://www.courtsoftheworld.com/upload/courts/11011/1/COTW-stade-de-vidy-1704204273.webp" alt="Description 3">
+        </div>
+        
+    
+    
+   
+        
+    </div>    
+    <hr class="gallery-line">
+    <script>
+        
+        if (!localStorage.getItem('loggedIn')) {
+            window.location.href = "sign.html";
+        }
+
+        document.getElementById('logout').addEventListener('click', function() {
+            localStorage.removeItem('loggedIn');
+            window.location.href = "signn.html";
+        });
+    </script>
+</body>
+<footer>
+    <div class="footer">
+      © Copyright <strong><span>Marter</span></strong> | no kaperayt please      </div>
+</footer>
+</html>

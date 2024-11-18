@@ -1,38 +1,38 @@
-<head></head>
-    <title>Sign Up</title>
-    <link rel="stylesheet" type="text/css" href="homepage.css" media="screen">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sign Up </title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>SIGN UP</h2>
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            
+            <button type="submit">Sign In</button>
+        </form>
+        <div id="error-message" class="error-message"></div>
+    </div>
 
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
 
-    <body data-new-gr-c-s-check-loaded="14.1195.0" data-gr-ext-installed="">
-        <header>
-            <div class="header">
-                <div class="header-Left">
-                    <a class="logo">MARTER</a>
-                </div>
-            <div class="header-Right">
-                <a href="homepage.html">HOME</a>
-               <a href="schedule.html">SCHEDULE</a>
-                <a href="contact.html">CONTACT US</a>
-                <a href="about.html">ABOUT US</a>
-                <a class="active" href="sign.html">SIGN UP</a>
-                
-            </div>
-        </div>
-
-        </header>
-
-        <section class="cars-section">
-            <h1></h1>
-            <div class="image-gallery">
-                
-              
-        </section>
-
-    </body>
-
-        <footer class="">
-            <div class="footer">
-                 <strong><span>No @copyright this is original from Mr.Mvp James Abandoy</span></strong>. 
-            </div>
-        </footer>
+         
+            localStorage.setItem('loggedIn', true); 
+            window.location.href = "homepage.html"; 
+        });
+    </script>
+</body>
+</html>
