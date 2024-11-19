@@ -1,9 +1,9 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #349aa1;
-  margin: 0;
-  padding: 20px;
+  background-color: #7a7a88;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0; /* Clean, modern font */
 }
+
 
 .cover {
   background-image: url('https://img.freepik.com/free-psd/3d-rending-mike-playing-sport_23-2149321178.jpg?t=st=1731909524~exp=1731913124~hmac=bbbdaeea077ce4b5409d40ef2cee7f96fd6f131158db2c219dea4f14ed41f2a0&w=1060'); /* Replace with your image path */
@@ -17,40 +17,51 @@ body {
   align-items: center; /* Center vertically */
   text-align: right; /* Center text */
 }
-
+  
 .header {
   overflow: hidden;
-  background-color: #fff;
+  background-color: #21470b;
   padding: 10px 0;
-}
-
-.header a {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}.header a {
   float: left;
-  color: rgb(17, 7, 7);
-  text-align: center;
-  padding: 12px;
+  color: white;
+  padding: 14px 20px;
   text-decoration: none;
-  font-size: 18px;
-  border-radius: 4px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 .header a.logo {
-  font-size: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  padding-left: 15px;
 }
 
-.header-Right a:hover {
-  background-color: rgb(199, 184, 184);
+.header a:hover {
+  background-color: #2e8b57;
   color: white;
 }
 
 .header a.active {
-  background-color: rgb(2, 2, 2);
-  color: rgb(245, 244, 244);
+  background-color: #365401;
+  color: white;
 }
 
 .header-Right {
   float: right;
+  padding-right: 15px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #21470b;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
 }
 
 

@@ -1,40 +1,70 @@
-
-<head></head>
-    <title>My Homepage </title>
+<head>
+    <title>My Homepage</title>
     <link rel="stylesheet" type="text/css" href="about.css" media="screen">
-    </head>
+    <style>
+        .circle-image {
+            width: 200px; /* Adjust size as needed */
+            height: 200px; /* Adjust size as needed */
+            border-radius: 50%; /* Makes the image circular */
+            overflow: hidden;
+            object-fit: cover; /* Ensures the image scales properly within the circle */
+            border: 2px solid #000; /* Optional: Adds a border for a professional look */
+        }
 
+        .image-container {
+            display: flex;
+            flex-direction: column; /* Arrange images and text vertically */
+            align-items: center; /* Centers the images and text horizontally */
+            justify-content: center; /* Ensures everything is centered vertically */
+            text-align: center; /* Centers the text below the images */
+        }
 
-    <body data-new-gr-c-s-check-loaded="14.1195.0" data-gr-ext-installed="">
-        <header>
-            <div class="header">
-                <div class="header-Left">
-                    <a class="logo">MARTER</a>
-                </div>
+        .image-container img {
+            margin: 10px 0; /* Adds space between the images */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header-Left">
+                <a class="logo">MARTER</a>
+            </div>
             <div class="header-Right">
                 <a href="homepage.html">HOME</a>
                 <a href="schedule.html">SCHEDULE</a>
                 <a href="contact.html">CONTACT US</a>
                 <a class="active" href="about.html">ABOUT US</a>
                 <a href="sign.html">SIGN UP</a>
-                
             </div>
         </div>
+    </header>
 
-        </header>
-
-        <section>
-               <h1>ABOUT US</h1>
-               <div class="image-gallery">
-                <div class="car-item">
-                    <h2>If you have more inquiry please contact Mr. James Berth Abandoy</h2>
-                    
-        </section>
-
-    </body>
-
-        <footer class="">
-            <div class="footer">
-             <strong><span>No @copyright this is original from Mr.Mvp James Abandoy</span></strong>. 
+    <section>
+        <div class="style">
+            <div class="image-container"> 
+                <i>
+                    <p style="font-family: 'Times New Roman', Times, serif;">
+                        “Schedule your priorities, don’t prioritize your schedule." – Stephen Covey
+                    </p>
+                </i>
+                <img src="https://scontent.fdvo2-2.fna.fbcdn.net/v/t39.30808-6/322475558_1129134781123121_562693351036519130_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFbvco4jnQz1WpHaxQyERl2fIgMzIzqBkV8iAzMjOoGRZXhxCpHGBys7pAZe6iqYKZu6cl5jCaGWWnrpWT7ScAF&_nc_ohc=kDFP-WzVeVIQ7kNvgEgWyYI&_nc_zt=23&_nc_ht=scontent.fdvo2-2.fna&_nc_gid=AHSUz-sba1a86WMpvsH2WlA&oh=00_AYCkCyKTLvMvlM0pZK2czOxEc1k576Z7PIg_2YYaVdJ89A&oe=67427E5E" 
+                alt="Image 1" class="circle-image">
+                <img src="https://scontent.fmnl9-2.fna.fbcdn.net/v/t39.30808-6/420186120_1049676419456823_3430320483306043590_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHOX5YuEQ4DdrMg1RUQvlvE_WXcsL6H0Y39ZdywvofRjVjyrbxEEgOyMpHZkyQQIgx1cyYeM28W6iuJB_vWWvFR&_nc_ohc=F_nQME4f3IUQ7kNvgH8u0yC&_nc_zt=23&_nc_ht=scontent.fmnl9-2.fna&_nc_gid=AkNfFC5WRJmmHbom8viwDUv&oh=00_AYB4mwF9tl1TIVjJzAbxfIIYL5jALdxeX1x158aDtQL1QA&oe=67428177" 
+                alt="Image 2" class="circle-image">
+                <p>Hey, we are <b>James Berth Montimar and Ricone Ometer</b>, IT students at NBSC and owners of this website.</p>
+                <p>
+                    "Making time simple – your go-to solution for hassle-free court reservations. With our easy-to-use scheduling system, availability is always at your fingertips, ensuring your playtime is just a click away!"
+                </p> 
+                <p>“Good scheduling isn’t about filling every minute; it’s about creating space for what matters most.”</p>
             </div>
-        </footer>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <strong><span>No @copyright, this is original from Mr. MVP James Abandoy</span></strong>.
+        </div>
+    </footer>
+</body>
