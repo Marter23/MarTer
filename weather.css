@@ -1,0 +1,74 @@
+body {
+    background-color: #acacbc;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  body {
+    background-size: cover; /* Makes sure the image covers the whole page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+  
+  h1 {
+    color: #faf7f7;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .header {
+    overflow: hidden;
+    background-color: #21470b;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(250, 248, 248, 0.2);
+  }
+  
+  .header a {
+    float: left;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .header a.logo {
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 15px;
+  }
+  
+  .header a:hover {
+    background-color: #2e8b57;
+    color: white;
+  }
+  
+  .header a.active {
+    background-color: #365401;
+    color: white;
+  }
+  
+  .header-Right {
+    float: right;
+    padding-right: 15px;
+  }
+  
+    .footer{
+      position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #21470b;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    }
+    #content{
+      color: maroon;
+      text-align: justify;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 75px;
+    }
