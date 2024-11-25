@@ -3,10 +3,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0; /* Clean, modern font */
 }
+body {
+  background-image: url('https://wallpapercave.com/wp/wp6621664.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the image fixed when scrolling */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
 
 
 .cover {
-  background-image: url('https://img.freepik.com/free-photo/gradient-dark-blue-futuristic-digital-background_53876-160646.jpg?t=st=1732263719~exp=1732267319~hmac=a2dc82746c0113cae21d32f445538b690ba3665d5d3f76bbe1ab8b6966acae7a&w=900'); /* Replace with your image path */
+  background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/04/Photos-download-abstract-minimalist-wallpaper-HD.jpg'); /* Replace with your image path */
   background-size: cover; /* Cover the entire div */
   background-position: center; /* Center the image */
   height: 300px; /* Adjust the height as needed */

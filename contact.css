@@ -3,6 +3,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0; /* Clean, modern font */
   }
+  body {
+    background-image: url('https://wallpaperaccess.com/full/2482052.png'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
   
   .header {
     overflow: hidden;

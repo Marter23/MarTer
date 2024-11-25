@@ -8,6 +8,16 @@ body {
   margin: 0;
 }
 
+body {
+  background-image: url('https://www.designyourway.net/blog/wp-content/uploads/2017/06/Minimalist-Wallpaper-Desktop-Background-34.jpg'); 
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the image fixed when scrolling */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
 .login-container {
   background: rgb(244, 242, 242);
   padding: 20px;
