@@ -1,54 +1,62 @@
-
-
-<head></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" type="text/css" href="contact.css" media="screen">
-    </head>
-
-
-    <body data-new-gr-c-s-check-loaded="14.1195.0" data-gr-ext-installed="">
-        <header>
-            <div class="header">
-                <div class="header-Left">
-                    <a  class="logo">MARTER</a>
-                </div>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-Left">
+                <a class="logo">MARTER</a>
+            </div>
             <div class="header-Right">
                 <a href="homepage.html">HOME</a>
                 <a href="schedule.html">SCHEDULE</a>
-                <a href="weather.html"> WEATHER</a>
-                <a href="location.html"> LOCATION</a>
+                <a href="weather.html">WEATHER</a>
+                <a href="location.html">LOCATION</a>
                 <a class="active" href="contact.html">CONTACT US</a>
                 <a href="about.html">ABOUT US</a>
                 <a href="sign.html">LOGOUT</a>
-                
             </div>
-                </header>
-            
-                <section>
-                    <h1>Contact Us</h1>
-                    <div class="container">
-                        <h2>Message us!</h2>
-                        <form action="#" method="post">
-                            <div>
-                                <label for="name">Name:</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div>
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div>
-                                <label for="message">Message:</label>
-                                <textarea id="message" name="message" rows="4" required></textarea>
-                            </div>
-                           <button type="button" class="btn btn-primary" onclick="window.location.href='homepage.html'">Send Message</button>
-            
-                        </form>
-                    </div>
-                </section>
-            
-                <footer class="footer">
-                    <p>© 2024 <strong>Marter</strong>. All rights reserved. | <a href="#">Privacy Policy</a></p>
-                </footer>
-            </body>
-            </html>
+        </div>
+    </header>
+
+    <section>
+        <h1>Contact Us</h1>
+        <div class="container">
+            <h2>Message us!</h2>
+            <form action="#" method="post" onsubmit="return handleFormSubmit(event)">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 <strong>Marter</strong>. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        // Function to handle the form submission
+        function handleFormSubmit(event) {
+            event.preventDefault(); // Prevents the default form submission
+            alert('Your message is successfully sent!');
+            document.querySelector('form').reset(); // Resets the form fields
+        }
+    </script>
+</body>
+</html>

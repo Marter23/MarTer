@@ -96,7 +96,7 @@ body {
 }
 
 .footer-column h4 {
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 15px;
   text-transform: uppercase;
   font-weight: bold;
@@ -200,26 +200,43 @@ body {
   display: block;
 }
 
-.home-container, .info-container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+
+.home-container {
+  display: flex; /* Use flexbox for side-by-side alignment */
+  justify-content: space-between; /* Add spacing between Mission and Vision */
+  gap: 20px; /* Optional gap for spacing */
+  align-items: flex-start; /* Align items at the top */
+  padding: 20px; /* Add padding around the container */
 }
 
-
-h2 {
-  color: #333;
+.home-container2, .home-container3 {
+  flex: 1; /* Make both sections flexible */
+  max-width: 45%; /* Limit the width of each section */
+  padding: 20px; /* Add padding inside each section */
+  background: white; /* Background color */
+  border-radius: 8px; /* Larger rounded corners */
+  border: 2px solid #e74c3c; /* Add a visible border */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  font-size: 20px; /* Set the base font size for the text */
+  line-height: 1.6; /* Improve readability with line spacing */
 }
 
-p {
-  color: #111010;
-  line-height: 1.6;
-  font-size: medium;
+.home-container2 {
+  margin-right: 10px; /* Add space to the right for Mission */
 }
+
+.home-container h2 {
+  font-size: 30px; /* Font size for headings */
+  color: #2c3e50; /* Heading color */
+  border-bottom: 3px solid #e74c3c; /* Thicker underline effect for headings */
+  padding-bottom: 5px;
+}
+
+.home-container p {
+  font-size: 20px; /* Font size for paragraph text */
+  color: #333; /* Slightly darker color for text readability */
+}
+
 
 .typing-container {
   font-size: 48px; /* Increased size */
@@ -289,7 +306,7 @@ p {
 }
 .p1 {
   font-family: "Times New Roman", Times, serif;
-  font-size: medium;
+  font-size: 20px;
 }
 .gallery {
   display: flex;
