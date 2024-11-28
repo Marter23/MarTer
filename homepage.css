@@ -18,7 +18,7 @@ body {
   background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/04/Photos-download-abstract-minimalist-wallpaper-HD.jpg'); /* Replace with your image path */
   background-size: cover; /* Cover the entire div */
   background-position: center; /* Center the image */
-  height: 300px; /* Adjust the height as needed */
+  height: 800px; /* Adjust the height as needed */
   color: rgb(250, 241, 241); /* Text color */
   display: flex; /* Center content */
   justify-content: right; /* Center horizontally */
@@ -93,6 +93,7 @@ body {
 .footer-column {
   flex: 1;
   min-width: 200px;
+  text-transform: uppercase;
 }
 
 .footer-column h4 {
@@ -352,3 +353,4 @@ body {
   color: rgb(0, 0, 0);
   text-align: center;
 }
+
