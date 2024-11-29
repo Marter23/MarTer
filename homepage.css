@@ -15,11 +15,11 @@ body {
 
 .text-image-container {
   display: flex;
-  align-items: left; /* Align items vertically */
+  align-items: center; /* Align items vertically in the center */
   justify-content: space-between; /* Add space between the text and image */
-  gap: 20px; /* Add space between text and image */
+  gap: 50px; /* Space between text and image */
   margin: 20px auto;
-  max-width: 1000px; /* Optional: Limit container width */
+  max-width: 1200px; /* Max width for the container */
   padding: 20px;
 }
 
@@ -27,18 +27,28 @@ body {
 .text-section {
   flex: 1; /* Make the text section take up equal space */
   font-family: Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.6;
-  color: #333;
+  font-size: 22px; /* Larger font size for better readability */
+  text-align: left; /* Align text to the left */
+  line-height: 1.5;
+  color: black;
+  padding-right: 20px; /* Space between text and image */
 }
 
 /* Styling for the image section */
+.image-section {
+  flex: 1; /* Allow the image section to take up equal space */
+  display: flex;
+  justify-content: flex-end; /* Align the image to the right */
+}
+
 .image-section img {
-  max-width: 100%;
+  max-width: 90%; /* Increase image size to 90% of the container width */
   height: auto;
   border-radius: 10px; /* Optional: Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Shadow for effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
 }
+
+
 
 
 .cover {
