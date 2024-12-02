@@ -28,7 +28,7 @@
             <a href="location.html">LOCATION</a>
             <a href="contact.html">CONTACT US</a>
             <a href="about.html">ABOUT US</a>
-            <a href="sign.html">LOGOUT</a>
+            <a href="index.html">LOGOUT</a>
 
           
         </div>
@@ -77,33 +77,70 @@
         <i>"Scheduling brings order to chaos and makes success achievable." – Anthony Robbins</i> 
      </p>
         
-    <div class="gallery">
+     <div class="gallery">
         <div class="image-container">
-            <img src="https://www.courtsoftheworld.com/upload/courts/47955/0/COTW-monsanto-1704498874.webp" alt="This is a painting by Caspar David Friedrich. It is, in my judgment, coherent (it is, being a painting and a masterwork, extremely well composed and balanced), complex (there are trees, bushes, meadows, ponds, mountains, clouds) and fairly mysterious (what lies behind the trees and beyond the mountains?) but not very legible (there is no clear path, though neither does it seem easy to get lost).">
-        </div>
-        <div class="image-container">
-            <img src="https://www.courtsoftheworld.com/upload/courts/17984/0/COTW-veemarkt-1656167036.webp" alt="Here is a different painting, by John Constable. This one, unlike the previous, does, with the road on the right and the bridge on the left, and with the generally familiar and tamed features, seem legible. It also seems coherent (it is balanced and harmonious) and complex (there are many little things going on) but not containing a whole lot of mystery (except perhaps to ask us what happens behind the trees and in the pinkish-orange house).">
+            <img src="https://www.courtsoftheworld.com/upload/courts/47955/0/COTW-monsanto-1704498874.webp" alt="This picture was taken on November 1, 2024 at NBSC Court">
         </div>
         <div class="image-container">
-            <img src="https://www.courtsoftheworld.com/upload/courts/11011/1/COTW-stade-de-vidy-1704204273.webp" alt="Description 3">
+            <img src="https://www.courtsoftheworld.com/upload/courts/17984/0/COTW-veemarkt-1656167036.webp" alt="This picture was taken on November 5, 2024 at Manolo Plaza Court">
         </div>
+        <div class="image-container">
+            <img src="https://www.courtsoftheworld.com/upload/courts/11011/1/COTW-stade-de-vidy-1704204273.webp" alt="This picture was taken on November 7, 2024 at Manolo Plaza Court">
         </div>
-        
+
         <br>
-         <div class="gallery">
-            <div class="image-container">
-                <img src="https://newsinfo.inquirer.net/files/2019/08/30vaxx-620x413.jpg" alt="Description 4">
-            </div>
-            <div class="image-container">
-                <img src="https://cdn.phonebooky.com/blog/wp-content/uploads/2019/07/10150752/65011660_671319973281991_8348048158512644096_n.jpg" alt="Description 5">
-            </div>
-            <div class="image-container">
-                <img src="https://thumbs.dreamstime.com/b/dasmarinas-cavite-philippines-april-opposing-teams-young-active-males-play-sepak-takraw-foot-volleyball-covered-court-275075957.jpg" alt="Description 6">
-            </div>
-        </div>    
-        <br>
-       
-        <body>
+        <div class="gallery">
+        <div class="image-container">
+            <img src="https://newsinfo.inquirer.net/files/2019/08/30vaxx-620x413.jpg" alt="This picture was taken on November 10, 2024 at Tankulan Covered Court">
+        </div>
+        <div class="image-container">
+            <img src="https://cdn.phonebooky.com/blog/wp-content/uploads/2019/07/10150752/65011660_671319973281991_8348048158512644096_n.jpg" alt="This picture was taken on November 15, 2024 at St.Joseph Covered Court.">
+        </div>
+        <div class="image-container">
+            <img src="https://thumbs.dreamstime.com/b/dasmarinas-cavite-philippines-april-opposing-teams-young-active-males-play-sepak-takraw-foot-volleyball-covered-court-275075957.jpg" alt="This picture was taken on November 18, 2024 at Tankulan Covered Court">
+        </div>
+    </div>
+    <br>
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="close">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <h2 id="modal-title">Title</h2>
+            <p id="modal-description">Description</p>
+        </div>
+    </div>
+    
+    <script>
+        const images = document.querySelectorAll('.image-container img');
+        const modal = document.getElementById('modal');
+        const modalImage = document.getElementById('modal-image');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+        const closeBtn = document.getElementById('close');
+    
+        images.forEach((image) => {
+            image.addEventListener('click', () => {
+                modal.style.display = 'flex';
+                modalImage.src = image.src;
+                modalTitle.textContent = ""; // Replace with specific titles if available
+                modalDescription.textContent = image.alt;
+            });
+        });
+    
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    
+        // Close modal when clicking outside content
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+    
+    </body>
 
             <!-- Container for Text and Image -->
             <div class="text-image-container">
